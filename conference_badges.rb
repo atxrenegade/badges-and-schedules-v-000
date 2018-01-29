@@ -10,7 +10,10 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-
+  number = 1
+  attendees.collect do |name|
+    "Hello, #{name}! You'll be assigned to room #{number}!"
+    number += 1
 end
 
 def printer(attendees)

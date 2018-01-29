@@ -12,12 +12,11 @@ end
 def assign_rooms(attendees)
   number = 0
   attendees.collect do |name|
-    number += 1
-    "Hello, #{name}! You'll be assigned to room #{number}!"
+    "Hello, #{name}! You'll be assigned to room #{number.each_with_index + 1}!"
   end
 end
 
 def printer(attendees)
-  puts badge_maker(attendees)
+  puts badge_maker.each {|name| }
   puts assign_rooms(attendees)
 end

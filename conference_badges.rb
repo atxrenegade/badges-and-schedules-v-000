@@ -12,9 +12,9 @@ end
 def assign_rooms(attendees)
   number = 1
   attendees.collect do |name|
-    "Hello, #{name}! You'll be assigned to room #{number}!"
+    puts "Hello, #{name}! You'll be assigned to room #{number}!"
     number += 1
-  end  
+  end
 end
 
 def printer(attendees)

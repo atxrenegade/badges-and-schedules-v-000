@@ -18,6 +18,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  puts badge_maker.each {|name| }
-  puts assign_rooms(attendees)
+  badge_batch_maker(attendees).each {|badge| puts badge}
+  assign_rooms(attendees)
 end
